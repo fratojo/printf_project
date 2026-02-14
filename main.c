@@ -4,9 +4,8 @@
 int main() {
     //char str[] ="kJ";
     //printf("%p\n", str);
-    int a = 42;
-    ft_printf("%x", a);
-
+    int a = -42;
+    ft_printf("%u", a);
     return 0;
 }
 

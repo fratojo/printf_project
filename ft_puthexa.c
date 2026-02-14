@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 08:31:38 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/14 11:10:55 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/14 15:21:27 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,7 @@ int	ft_puthexa(int n, char *base)
 	}
 	return (count);
 }
+// int main()
+// {
+// 	ft_puthexa(42, "0123456798abcdef");
+// }
