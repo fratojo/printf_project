@@ -8,13 +8,13 @@ SRC = ft_printf.c\
 		ft_putptr.c\
 		ft_putstr.c
 
-OBJS = $(SRC;.c=.o)
+OBJS = $(SRC:.c=.o)
 
-CC = CC
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-all : $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
@@ -28,6 +28,6 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 
-re : fclean
+re : fclean all
 
 .PHONY: all clean fclean re
