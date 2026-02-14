@@ -6,22 +6,24 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 14:31:09 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/13 15:23:12 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/14 11:15:57 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
+
 int	ft_putstr(char *str)
 {
-	int count;
+	int	count;
+
 	count = 0;
 	if (!str)
-		return(-1);
+		return (-1);
 	while (*str)
 	{
 		write(1, str, 1);
 		str++;
 		count++;
 	}
-	return(count);
+	return (count);
 }

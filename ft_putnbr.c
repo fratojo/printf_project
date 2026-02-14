@@ -6,15 +6,16 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 15:28:36 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/14 08:01:58 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/14 11:12:55 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
+
 int	ft_putnbr(int n)
 {
-	int count;
-	long nb;
+	int		count;
+	long	nb;
 
 	count = 0;
 	nb = n;

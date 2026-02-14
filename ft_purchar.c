@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 11:45:14 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/13 12:15:36 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/14 11:09:15 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 int	ft_putchar(char c)
 {
 	write(1, &c, 1);
-	return 1;
+	return (1);
 }
