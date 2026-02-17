@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/14 09:38:39 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/17 07:20:16 by maratojo         ###   ########.fr       */
+/*   Created: 2026/02/16 08:30:45 by maratojo          #+#    #+#             */
+/*   Updated: 2026/02/16 08:30:49 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putptr(void *ptr)
+int	ft_putchar(char c)
 {
-	int				count;
-	unsigned long	nb;
-
-	if (!ptr)
-		return (ft_putstr("(nil)"));
-	nb = (unsigned long)ptr;
-	count = 0;
-	count += ft_putstr("0x");
-	count += ft_puthexa(nb, "0123456879abcdef");
-	return (count);
+	write(1, &c, 1);
+	return (1);
 }

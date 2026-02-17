@@ -6,11 +6,11 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 15:28:36 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/14 11:12:55 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/16 08:28:17 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {
