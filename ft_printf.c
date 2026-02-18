@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 09:54:35 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/17 07:59:42 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/17 10:41:46 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ static int	handle_conversion(char c, va_list arg)
 	else if ((c == 'd') || (c == 'i'))
 		count += ft_putnbr(va_arg(arg, int));
 	else if (c == 'u')
-		count += ft_puthexa(va_arg(arg, unsigned long), "0123456789");
+		count += ft_puthexa(va_arg(arg, unsigned int), "0123456789");
 	else if (c == 'x')
-		count += ft_puthexa(va_arg(arg, unsigned long), "0123456789abcdef");
+		count += ft_puthexa(va_arg(arg, unsigned int), "0123456789abcdef");
 	else if (c == 'X')
-		count += ft_puthexa(va_arg(arg, unsigned long), "0123456789ABCDEF");
+		count += ft_puthexa(va_arg(arg, unsigned int), "0123456789ABCDEF");
 	else if (c == '%')
 		count += ft_putchar('%');
 	return (count);

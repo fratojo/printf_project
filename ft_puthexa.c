@@ -6,16 +6,16 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 08:31:38 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/16 08:53:32 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/02/18 07:37:22 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthexa(unsigned long n, char *base)
+int	ft_puthexa(unsigned int n, char *base)
 {
-	unsigned long	len_base;
 	int				count;
+	unsigned int	len_base;
 
 	count = 0;
 	len_base = 0;
