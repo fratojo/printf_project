@@ -6,7 +6,6 @@ SRC = ft_printf.c\
 		ft_putnbr.c\
 		ft_putptr.c\
 		ft_putstr.c\
-		ft_check_format.c
 
 OBJS = $(SRC:.c=.o)
 
