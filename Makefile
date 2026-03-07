@@ -5,7 +5,8 @@ SRC = ft_printf.c\
 		ft_puthexa.c\
 		ft_putnbr.c\
 		ft_putptr.c\
-		ft_putstr.c
+		ft_putstr.c\
+		ft_check_format.c
 
 OBJS = $(SRC:.c=.o)
 
@@ -27,6 +28,6 @@ clean :
 fclean : clean
 	rm -f $(NAME)
 
-re : fclean
+re : fclean all
 
 .PHONY: all clean fclean re

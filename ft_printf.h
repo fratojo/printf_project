@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 08:27:15 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/17 10:39:05 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/03/07 09:26:40 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int	ft_putstr(char *str);
 int	ft_putptr(void *ptr);
 int	ft_puthexa(unsigned int n, char *base);
 int	ft_putnbr(int n);
+int	ft_check_format(char c);
 
 #endif

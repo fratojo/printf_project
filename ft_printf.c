@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 09:54:35 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/17 10:41:46 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/03/07 10:47:17 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,15 +42,17 @@ int	ft_printf(const char *format, ...)
 	int		i;
 	int		count;
 
-	va_start(arg, format);
 	if (!format)
 		return (-1);
+	va_start(arg, format);
 	count = 0;
 	i = 0;
 	while (format[i])
 	{
 		if (format[i] == '%')
 		{
+			if (!format[i + 1])
+				return (-1);
 			count += handle_conversion(format[i + 1], arg);
 			i++;
 		}

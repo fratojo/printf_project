@@ -1,29 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_check_format.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/13 14:31:09 by maratojo          #+#    #+#             */
-/*   Updated: 2026/03/03 13:24:36 by maratojo         ###   ########.fr       */
+/*   Created: 2026/03/07 09:24:31 by maratojo          #+#    #+#             */
+/*   Updated: 2026/03/07 09:26:01 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int	ft_putstr(char *str)
+int	ft_check_format(char c)
 {
-	int	count;
-
-	count = 0;
-	if (!str)
-		return (ft_putstr("(null)"));
-	while (*str)
-	{
-		write(1, str, 1);
-		str++;
-		count++;
-	}
-	return (count);
+	if (c == 'c' || c == 's' || c == 'p' || c == 'd' || c == 'i'
+		|| c == 'u' || c == 'x' || c == 'X' || c == '%')
+		return (1);
+	return (0);
 }

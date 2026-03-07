@@ -2,10 +2,16 @@
 
 ## Description
    **ft_printf** is a reimplementation of the standard C library function `printf()`. This project teaches the fundamental concepts of variadic functions, string parsing, and formatted output in C.
-   
+
    The goal is to create a function that mimics the behavior of `printf()` while handling multiple conversion specifiers and returning the number of characters printed.
 
 ## Instructions
+
+### Installation
+   **cloning the repository:**
+```bash
+git clone git@vogsphere.42antananarivo.mg:vogsphere/intra-uuid-b6934049-605b-4e12-ab06-ddaa54aa76b2-7258094-maratojo
+```
 
 ### Compilation
 
@@ -25,7 +31,7 @@ This will generate the `libftprintf.a` static library file.
 
 2. Compile  the program with the library:
 ```bash
-cc file.c libftprintf.a -o program
+cc -Wall -Wextra -Werror file.c libftprintf.a -o program
 ```
    return (ft_putstr("(null)"))
 
@@ -48,14 +54,14 @@ cc file.c libftprintf.a -o program
 int main(void)
 {
     int count;
-    
+
     count = ft_printf("Hello %s!\n", "World");
     // Output: Hello World!
     // count = 13
-    
+
     count = ft_printf("Number: %d, Hex: %x\n", 42, 255);
     // Output: Number: 42, Hex: ff
-    
+
     return 0;
 }
 ```

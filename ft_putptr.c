@@ -6,7 +6,7 @@
 /*   By: maratojo <maratojo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/14 09:38:39 by maratojo          #+#    #+#             */
-/*   Updated: 2026/02/18 07:38:33 by maratojo         ###   ########.fr       */
+/*   Updated: 2026/03/07 08:37:37 by maratojo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	ft_puthexa_long(unsigned long n)
 	int		count;
 	char	*base;
 
-	base = "0123465789abcdef";
+	base = "0123456789abcdef";
 	count = 0;
 	if (n >= 16)
 		count += ft_puthexa_long(n / 16);
